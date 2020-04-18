@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+  padding: 36px;
+}
+
+.SearchForm-wrapper {
+  display: flex;
+  justify-content: center;
+}
