@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { BrowserRouter as Switch, Route } from "react-router-dom";
+
 import { Detail } from './pages/Detail'
 import { Home } from './pages/Home'
 
@@ -7,15 +9,12 @@ import 'bulma/css/bulma.css';
 
 class App extends Component {
  render () {
-
-   const url = new URL(document.location)
-   const Page = url.searchParams.has('id')
-         ? <Detail id={url.searchParams.get('id')} />
-         : <Home />
-
-    return (
+   return (
       <div className="App">
-        {Page}
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/detail/:movieId' component={Detail} />
+        </Switch>
       </div>
     );
   }
