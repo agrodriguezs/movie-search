@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from  'prop-types'
+import { ButtonBackToHome } from '../components/ButtonBackToHome'
+
 
 const API_KEY = '81d5a02e';
 
@@ -36,7 +38,7 @@ _goBack () {
     const {Title, Poster, Actors, imdbRanting, Plot, Runtime, Year, Language, Genre, Country } = this.state.movie
     return (
       <div>
-        <button onClick={this._goBack}> Volver </button>
+        <ButtonBackToHome />
         <h1>{Title}</h1>
         <img src={Poster} alt={Title} className="poster-detail"/>
         <h3>Ranting: {imdbRanting}, Genre: {Genre}</h3>

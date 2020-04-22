@@ -16,14 +16,14 @@ export class MovieList extends Component {
           movies.map(movie => {
             return (
               <div key={movie.imdbID}
-                   className= 'MoviesList-item'>
-                    <Movie
-                        id={movie.imdbID}
-                        key={ movie.imdbID }
-                        title= { movie.Title }
-                        poster={ movie.Poster }
-                        year={ movie.Year }
-                     />
+               className= 'MoviesList-item'>
+                <Movie
+                    id={movie.imdbID}
+                    key={ movie.imdbID }
+                    title= { movie.Title }
+                    poster={ movie.Poster }
+                    year={ movie.Year }
+                 />
               </div>
             )
           })
