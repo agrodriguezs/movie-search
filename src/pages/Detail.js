@@ -32,7 +32,7 @@ _goBack () {
       <div>
         <button onClick={this._goBack}> Volver </button>
         <h1>{Title}</h1>
-        <img src={Poster} alt={Title} />
+        <img src={Poster} alt={Title} className="poster-detail"/>
         <h3>Ranting: {imdbRanting}, Genre: {Genre}</h3>
         <p>{Plot}</p>
         <p>Actors: {Actors}</p>

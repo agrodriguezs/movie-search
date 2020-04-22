@@ -19,3 +19,11 @@
   margin-bottom: 24px;
   width: 48%;
 }
+.poster-home {
+  display: flex;
+  max-width: 230px;
+}
+.poster-detail {
+  display: flex;
+  max-width: 300px;
+}

@@ -18,6 +18,7 @@ export class Movie extends Component {
             <img
               src={ poster }
               alt={ title }
+              className = "poster-home"
             />
           </figure>
         </div>
