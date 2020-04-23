@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import ImgDefault  from '../assets/images/imgNoFound.jpg'
 
 import { Link } from "react-router-dom";
 
@@ -13,25 +14,28 @@ export class Movie extends Component {
 
   render () {
     const { id, poster, title, year } = this.props
+    var posterImg = ''
+
+    if ( poster === 'N/A')
+      posterImg = ImgDefault
+    else
+      posterImg =  poster
+
     return (
-      <Link to={`/detail/${id}`} className="card">
-        <div className="card-image">
+      <Link to={`/detail/${id}`}>
+      <div className="Movie-item">
+        <span>
           <figure className="image">
             <img
-              src={ poster }
+              src={ posterImg }
               alt={ title }
               className = "poster-home"
             />
           </figure>
-        </div>
-        <div className="card-content">
-          <div className="media">
-            <div className="media-content">
-              <p className="title is-4">{ title }</p>
-              <p className="subtitle is-6">{ year }</p>
-            </div>
-          </div>
-        </div>
+        </span>
+        <span className="title is-6">{ title }</span>
+        <span className="subtitle is-6">{ year }</span>
+      </div>
       </Link>
     )
   }
