@@ -33,8 +33,8 @@ export class Movie extends Component {
             />
           </figure>
         </span>
-        <span className="title is-6">{ title }</span>
-        <span className="subtitle is-6">{ year }</span>
+        <span className="title is-6"> { title } </span>
+        <span className="subtitle is-6"> ({ year }) </span>
       </div>
       </Link>
     )
