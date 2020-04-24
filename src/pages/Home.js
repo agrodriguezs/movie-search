@@ -18,8 +18,8 @@ export class Home extends Component {
 
   render () {
     return(
-      <div>
-        <Title>Search Movie</Title>
+      <div className="page-wrap">
+        <Title >Search Movie</Title>
         <div className="SearchForm-wrapper">
           <SearchForm onResults={this._handleResults} />
         </div>

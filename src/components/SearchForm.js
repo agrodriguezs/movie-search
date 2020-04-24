@@ -25,6 +25,7 @@ export class SearchForm extends Component {
 
   render () {
     return (
+
       <form onSubmit={this._handleSubmit}>
           <div className="field has-addons">
             <div className="control">
@@ -41,6 +42,7 @@ export class SearchForm extends Component {
             </div>
           </div>
       </form>
+    
 
     )
   }

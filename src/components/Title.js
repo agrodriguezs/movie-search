@@ -1,6 +1,6 @@
 import React from 'react';
 
 export const Title = ({children}) => (
-  <h1 className="title">{children}</h1>
+  <span className="TitleForm">{children}</span>
 
 )
