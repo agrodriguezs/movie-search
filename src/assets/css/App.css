@@ -70,7 +70,11 @@ body {
   max-width: 230px;
 
 }
-.poster-home:hover {filter: opacity(.5);}
+.image-home {
+  max-width: 43%;
+  text-align: center;
+}
+.poster-home:hover {filter: opacity(.6);}
 
 .poster-detail {
  max-width: 300px;

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { MovieList } from '../components/MovieList'
 import { SearchForm } from '../components/SearchForm';
 import { Title } from '../components/Title';
+import ImageHome  from '../assets/images/cinema.png'
 
 export class Home extends Component {
   state = { usedSearch: false, results: [] }
@@ -27,6 +28,15 @@ export class Home extends Component {
           ? this._renderResults()
           : <small>Use the form to search a movie </small>
         }
+        <div>
+          <figure>
+            <img
+              src={ ImageHome }
+              alt= 'movies'
+              className = "image-home"
+            />
+          </figure>
+        </div>
       </div>
     )
   }
