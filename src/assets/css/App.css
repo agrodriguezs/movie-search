@@ -1,5 +1,4 @@
 * { margin: 0; padding: 0; }
-
 html {
   background-color: #610B0B;
 }
@@ -17,19 +16,16 @@ body {
     background-color: #610B0B;
     color: white;
 }
-
 .SearchForm-wrapper {
   display: flex;
   justify-content: center;
 }
-
 .TitleForm {
   font-family: 'Arial';
   font-size: 24px;
   display: block;
   margin: 20px;
 }
-
 .MoviesList, .MovieDetail {
   display: flex;
   flex-wrap: wrap;
@@ -44,7 +40,6 @@ body {
   -webkit-box-shadow: 0 0 10px black;
   box-shadow: 0 0 20px black;
 }
-
 .MoviesList-item, .ImgDetail  {
   margin: 10px;
   padding: 10px;
@@ -75,7 +70,6 @@ body {
   text-align: center;
 }
 .poster-home:hover {filter: opacity(.6);}
-
 .poster-detail {
  max-width: 300px;
 }
@@ -88,12 +82,11 @@ body {
   font-weight: bold;
   font-size: 1.7em;
 }
-
 #description span.icon {
   font-size: 20px;
   display: inline-block;
   width: 32px;
-color:  #e0891d;
+  color:  #e0891d;
 }
 #description strong {
   font-size: 24px;
@@ -101,7 +94,7 @@ color:  #e0891d;
   font-weight: bold;
 }
 #description {
- margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 a {
   color: #e0891d;
@@ -123,4 +116,24 @@ a:hover {
   font-weight: bold;
     background-color: #e0891d;
     color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width:640px) {
+  .MoviesList, .MovieDetail {
+      width: 100%;
+      margin: 10px auto;
+      padding: 20px;
+      box-shadow: 0 0 10px black;
+  }
+}
+@media screen and (max-width:1024px) and (min-width:640px) {
+  .MoviesList, .MovieDetail {
+      width: 90%;
+      margin: 20px auto;
+      padding: 15px;
+      box-shadow: 0 0 15px black;
+  }
+}
+@media screen and (min-width:1024px) {
+  /* reglas CSS */
 }
