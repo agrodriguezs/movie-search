@@ -114,3 +114,9 @@ a:hover {
 .button.is-info:hover {
   background-color: #CC9900;
 }
+.tag:not(body).is-warning {
+  margin-left: 5px;
+  font-weight: bold;
+    background-color: #e0891d;
+    color: rgba(0, 0, 0, 0.7);
+}
