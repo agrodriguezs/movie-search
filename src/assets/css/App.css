@@ -54,7 +54,7 @@ body {
     width: 320px;
 }
 .Movie-Item {
-  display: flex;
+    display: flex;
   	flex-direction: column;
   	flex-wrap: nowrap;
   	justify-content: space-between;
