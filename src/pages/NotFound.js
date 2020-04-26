@@ -1,18 +1,14 @@
 import React from 'react'
 import { ButtonBackToHome } from '../components/ButtonBackToHome'
+import ImageNoFound  from '../assets/images/nofound.png'
 
 export const NotFound = () => (
 
-  <div>
-
-    <h1 className = "title">
-      404
-    </h1>
-
-    <h2 className = "subtitle">
-     Sorry! the page is not found
-    </h2>
-
+  <div className="NoFound">
+    <h2>Sorry! the page is not found</h2>
+    <figure>
+      <img src={ ImageNoFound } alt= '404' />
+    </figure>
     <ButtonBackToHome />
 
   </div>
