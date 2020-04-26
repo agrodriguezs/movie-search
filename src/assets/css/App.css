@@ -11,6 +11,13 @@ body {
   height: 4em;
     background-color: #610B0B;
 }
+.pie a:before, .pie a:after{
+  content: ' ';
+  margin: 1px;
+}
+.pie .parrafo{
+  margin-bottom: 0.1em;
+}
 .App {
     flex-grow: 1;
     text-align: center;
