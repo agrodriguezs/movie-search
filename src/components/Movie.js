@@ -14,12 +14,7 @@ export class Movie extends Component {
 
   render () {
     const { id, poster, title, year } = this.props
-    var posterImg = ''
-
-    if ( poster === 'N/A')
-      posterImg = ImgDefault
-    else
-      posterImg =  poster
+    var posterImg = ( poster === 'N/A') ? ImgDefault : poster
 
     return (
       <Link to={`/detail/${id}`}>

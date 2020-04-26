@@ -39,23 +39,10 @@ _goBack () {
  }
 
   render () {
-    const {Title,
-           Poster,
-           Actors,
-           imdbRating,
-           Plot,
-           Rated,
-           Runtime,
-           Year,
-           Language,
-           Genre,
-           Country,
-           Director,
-           Writer,
-           Awards,
-           BoxOffice,
-           Production
-             } = this.state.movie
+    const {Title,Poster,Actors,imdbRating,Plot,Rated,
+           Runtime,Year,Language,Genre,Country,Director,
+           Writer,Awards,BoxOffice,Production
+          } = this.state.movie
 
            var posterImg = ''
 
@@ -63,6 +50,7 @@ _goBack () {
              posterImg = ImgDefault
            else
              posterImg =  Poster
+
     return (
 
       <div className= 'MoviesList'>
@@ -83,6 +71,7 @@ _goBack () {
                   </li>
                   <li>{Plot}</li>
                   <li><span className="icon"><IoIosPeople/></span>Actors: { Actors }, director: { Director }, writer: { Writer }. { Production } </li>
+
                   <li><span className="icon"><FaTrophy /></span>{ Awards }. Box Office: { BoxOffice }</li>
                   <li><span className="icon"><RiTimerLine /></span>{Runtime}.
                       <span className="icon"> <MdLanguage /></span>{ Language }. Country: { Country } </li>
